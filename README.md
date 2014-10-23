@@ -2,7 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/postcss-filter-declarations.svg)](https://www.npmjs.org/package/postcss-filter-declarations)
 [![Build Status](https://travis-ci.org/shinnn/postcss-filter-declarations.svg?branch=master)](https://travis-ci.org/shinnn/postcss-filter-declarations)
-[![Build status](https://ci.appveyor.com/api/projects/status/bi4pflltlq5368ym?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/postcss-filter-declarations)
+[![Build status](https://ci.appveyor.com/api/projects/status/urhy45v081pp097g?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/postcss-filter-declarations)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/postcss-filter-declarations.svg)](https://coveralls.io/r/shinnn/postcss-filter-declarations)
 [![devDependency Status](https://david-dm.org/shinnn/postcss-filter-declarations/dev-status.svg)](https://david-dm.org/shinnn/postcss-filter-declarations#info=devDependencies)
 
@@ -89,7 +89,7 @@ postcss()
     pops: 'color'
   }))
   .process('a {color: red;} b {background: blue;}')
-  .css //=> 'a {color: red;} b {}'
+  .css; //=> 'a {color: red;} b {}'
 ```
 
 #### options.exclude
@@ -106,7 +106,7 @@ postcss()
     exclude: true
   }))
   .process('a {color: red;} b {background: blue;}')
-  .css //=> 'a {} b {background: blue;}'
+  .css; //=> 'a {} b {background: blue;}'
 ```
 
 ## License
