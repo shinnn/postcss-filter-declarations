@@ -41,8 +41,8 @@
     "istanbul": "^0.3.2",
     "istanbul-coveralls": "^1.0.1",
     "jscs": "^1.7.3",
-    "postcss": "^2.2.5",
     "tap-spec": "^1.0.1",
     "tape": "^3.0.1"
+    "postcss": "^4.0.3",
   }
 }

@@ -2,35 +2,27 @@
  * postcss-filter-declarations | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/postcss-filter-declarations
 */
-
 'use strict';
 
-module.exports = function filterDeclarations(options) {
+module.exports = function postcssFilterDeclarations(options) {
   options = options || {};
 
-  if (options.properties) {
-    options.props = options.properties;
+  var properties = options.properties || options.props;
+  var exclude = !!options.exclude;
+
+  if (!Array.isArray(properties)) {
+    properties = [properties];
   }
 
-  if (!Array.isArray(options.props)) {
-    options.props = [options.props];
-  }
-
-  options.exclude = !!options.exclude;
-
-  return function(style) {
+  function filterDeclarations(style) {
     style.eachRule(function(rule) {
-      var removeIndex = [];
-
-      rule.decls.forEach(function(decl, index) {
-        if (options.exclude !== (options.props.indexOf(decl.prop) === -1)) {
-          removeIndex.push(index);
+      rule.each(function(decl, index) {
+        if (exclude !== (properties.indexOf(decl.prop) === -1)) {
+          rule.remove(index);
         }
       });
-
-      removeIndex.forEach(function(index) {
-        rule.remove(rule.decls[index]);
-      });
     });
-  };
+  }
+
+  return filterDeclarations;
 };
