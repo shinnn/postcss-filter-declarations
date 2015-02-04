@@ -1,6 +1,6 @@
 {
   "name": "postcss-filter-declarations",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "PostCSS plugin to filter declarations by property names",
   "repository": "shinnn/postcss-filter-declarations",
   "author": {
