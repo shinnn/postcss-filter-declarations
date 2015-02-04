@@ -1,6 +1,6 @@
 # postcss-filter-declarations
 
-[![NPM version](https://badge.fury.io/js/postcss-filter-declarations.svg)](https://www.npmjs.org/package/postcss-filter-declarations)
+[![NPM version](https://img.shields.io/npm/v/postcss-filter-declarations.svg)](https://www.npmjs.com/package/postcss-filter-declarations)
 [![Build Status](https://travis-ci.org/shinnn/postcss-filter-declarations.svg?branch=master)](https://travis-ci.org/shinnn/postcss-filter-declarations)
 [![Build status](https://ci.appveyor.com/api/projects/status/urhy45v081pp097g?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/postcss-filter-declarations)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/postcss-filter-declarations.svg)](https://coveralls.io/r/shinnn/postcss-filter-declarations)
@@ -57,7 +57,7 @@ postcss()
 
 ## Installation
 
-[Use npm](https://www.npmjs.org/doc/cli/npm-install.html).
+[Use npm](https://docs.npmjs.com/cli/install).
 
 ```
 npm install postcss-filter-declarations
@@ -74,9 +74,9 @@ var filterDeclarations = require('postcss-filter-declarations');
 *options*: `Object`  
 Return: `Function`
 
-#### options.props
+#### options.properties
 
-(alias: **options.properties**)
+(alias: **options.props**)
 
 Type: `Stirng` or `Array` of `String`  
 Default: `[]`
@@ -97,7 +97,7 @@ postcss()
 Type: `Boolean`  
 Defult: `false`
 
-Inverts the filtering result.
+`true` inverts the filtering result.
 
 ```javascript
 postcss()
@@ -111,6 +111,6 @@ postcss()
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
