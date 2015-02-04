@@ -44,5 +44,10 @@
     "tap-spec": "^1.0.1",
     "tape": "^3.0.1"
     "postcss": "^4.0.3",
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 98,
+    "requireBlocksOnNewline": true,
+    "validateLineBreaks": "LF"
   }
 }
