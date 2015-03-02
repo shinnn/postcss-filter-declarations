@@ -36,12 +36,12 @@
     "filter"
   ],
   "devDependencies": {
-    "eslint": "^0.13.0",
-    "istanbul": "^0.3.5",
-    "istanbul-coveralls": "^1.0.1",
-    "jscs": "^1.10.0",
-    "postcss": "^4.0.3",
-    "tap-spec": "^2.2.0",
+    "eslint": "^0.15.1",
+    "istanbul": "^0.3.6",
+    "istanbul-coveralls": "^1.0.2",
+    "jscs": "^1.11.3",
+    "postcss": "^4.0.6",
+    "tap-spec": "^2.2.2",
     "tape": "^3.5.0"
   },
   "jscsConfig": {
