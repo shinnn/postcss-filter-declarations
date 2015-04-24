@@ -81,12 +81,12 @@ Return: `Function`
 Type: `Stirng` or `Array` of `String`  
 Default: `[]`
 
-Removes all [CSS declarations](https://github.com/postcss/postcss#declaration-node) except for the proerties specified by this option.
+Removes all [CSS declarations](https://github.com/postcss/postcss/blob/master/API.md#declaration-node) except for the proerties specified by this option.
 
 ```javascript
 postcss()
   .use(filterDeclarations({
-    pops: 'color'
+    props: 'color'
   }))
   .process('a {color: red;} b {background: blue;}')
   .css; //=> 'a {color: red;} b {}'
@@ -102,7 +102,7 @@ Defult: `false`
 ```javascript
 postcss()
   .use(filterDeclarations({
-    pops: 'color',
+    props: 'color',
     exclude: true
   }))
   .process('a {color: red;} b {background: blue;}')
