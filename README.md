@@ -1,12 +1,10 @@
 # postcss-filter-declarations
 
-[![NPM version](https://img.shields.io/npm/v/postcss-filter-declarations.svg)](https://www.npmjs.com/package/postcss-filter-declarations)
-[![Build Status](https://travis-ci.org/shinnn/postcss-filter-declarations.svg?branch=master)](https://travis-ci.org/shinnn/postcss-filter-declarations)
-[![Build status](https://ci.appveyor.com/api/projects/status/urhy45v081pp097g?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/postcss-filter-declarations)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/postcss-filter-declarations.svg)](https://coveralls.io/r/shinnn/postcss-filter-declarations)
-[![devDependency Status](https://david-dm.org/shinnn/postcss-filter-declarations/dev-status.svg)](https://david-dm.org/shinnn/postcss-filter-declarations#info=devDependencies)
+[![npm version](https://img.shields.io/npm/v/postcss-filter-declarations.svg)](https://www.npmjs.com/package/postcss-filter-declarations)
+[![Build Status](https://travis-ci.com/shinnn/postcss-filter-declarations.svg?branch=master)](https://travis-ci.com/shinnn/postcss-filter-declarations)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/postcss-filter-declarations.svg)](https://coveralls.io/github/shinnn/postcss-filter-declarations)
 
-[PostCSS](https://github.com/postcss/postcss) plugin to filter declarations by property names
+A [PostCSS](https://github.com/postcss/postcss) plugin to filter declarations by property names
 
 ```javascript
 var fs = require('fs');
@@ -57,7 +55,7 @@ postcss()
 
 ## Installation
 
-[Use npm](https://docs.npmjs.com/cli/install).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install postcss-filter-declarations
@@ -111,6 +109,6 @@ postcss()
 
 ## License
 
-Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2019 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
