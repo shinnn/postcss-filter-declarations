@@ -15,10 +15,10 @@ module.exports = function postcssFilterDeclarations(options) {
   }
 
   function filterDeclarations(style) {
-    style.eachRule(function(rule) {
+    style.walkRules(function(rule) {
       rule.each(function(decl, index) {
         if (exclude !== (properties.indexOf(decl.prop) === -1)) {
-          rule.remove(index);
+          rule.removeChild(index);
         }
       });
     });
